@@ -13,15 +13,21 @@ namespace MathewHartley
         [SerializeField] private SpriteRenderer spriteRenderer; // Our character's sprite.
 
 		private Rigidbody2D charRigidbody2D;
-		[SerializeField] private float charSpeed;
-		[SerializeField] private float charJump;
+		[SerializeField] public float charSpeed;
+		[SerializeField] public float charJump;
 		private bool isGrounded;
 		
+		/// <summary>
+		/// initializes the Rigidbody2d component
+		/// </summary>
         private void Start()
 		{
 			charRigidbody2D = GetComponent<Rigidbody2D>();
 		}
 		
+		/// <summary>
+		/// basic movement script allowing for horizontal movement and jumping
+		/// </summary>
 		private void Update()
         {
 			//store the horizontal keyboard input
@@ -53,7 +59,7 @@ namespace MathewHartley
 			}
 			
 			//get button press input space bar and whether the character is grounded
-			if (Input.GetButtonDown("Jump") && isGrounded == true)
+			if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
 			{
 				//character jumps
 				charRigidbody2D.velocity = new Vector3(charRigidbody2D.velocity.x, charJump);

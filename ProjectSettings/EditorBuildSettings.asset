@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Platformer Framework/Scenes/Platformer (Basic Scene).unity
+    path: Assets/Scripts by (Mathew Hartley)/Platformer (Basic Scene).unity
     guid: afc556a507cd0b54f96394f3b654a8aa
   - enabled: 1
     path: Assets/Platformer Framework/Scenes/Platformer (The Pipeworks).unity

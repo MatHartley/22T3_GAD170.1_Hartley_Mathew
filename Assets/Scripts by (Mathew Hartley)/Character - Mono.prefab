@@ -88,7 +88,7 @@ MonoBehaviour:
   horizontalInputValue: 0
   spriteRenderer: {fileID: 4707247437944275735}
   charSpeed: 3
-  charJump: 10
+  charJump: 5
 --- !u!114 &5321171418743616898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9ee9bbe453490489143113da86edf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charScript: {fileID: 4945771366543217333}
 --- !u!1 &7516852884685629623
 GameObject:
   m_ObjectHideFlags: 0
