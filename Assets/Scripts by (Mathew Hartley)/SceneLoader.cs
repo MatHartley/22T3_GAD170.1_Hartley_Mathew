@@ -23,7 +23,7 @@ namespace MathewHartley
         private void OnTriggerEnter2D(Collider2D collision)
         {
 			//sets sceneActive to sceneOne
-			sceneActive = sceneOne;
+			sceneActive = sceneTwo;
 			//runs the LoadScene method above
 			LoadScene();
 
